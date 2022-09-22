@@ -20,7 +20,7 @@ end
 
 # seed through testimonials table
 10.times do Testimonial.create(
-    content: Faker::Lorem.paragraph,
+    testimony: Faker::Lorem.paragraph,
     article_id: Article.all.sample.id,
     user_id: User.all.sample.id
     )
